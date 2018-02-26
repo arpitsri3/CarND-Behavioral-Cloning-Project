@@ -17,7 +17,8 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [image1]: ./cnn-architecture-624x890.png "Model Visualization"
-
+[image2]: ./center_2016_12_01_13_37_57_790.jpg "Training Data Visualization"
+[image3]: ./center_2016_12_01_13_37_57_790_cropped.jpg "Training Data Cropped"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.  
@@ -117,6 +118,14 @@ I have done data Augmentation on the above as follows, to drastically change the
 5. Thus , a batch of 33 finally contains 99*2 datapoints after the above process. There's an increase to 33x6= 198 Datapoints.
 
 After the augmentation process, I had 38088 number of data points. I then preprocessed this data by by doing Lambda normalization and Cropping, which have again been explicitly discussed in the classroom. I'd like to say that this data augmentation , more than anything else, helped the most in training the network effectively.
+
+Here's a visualization of the original and cropped image at a sharp turn:
+
+Original Image:
+![alt text][image2]
+
+Cropped Image:
+![alt text][image3]
 
 The data has been shuffled and 21% of data has been split to validation data set. 
 
